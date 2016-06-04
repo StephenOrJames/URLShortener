@@ -1,0 +1,7 @@
+CREATE TABLE `redirect` (
+  `id` INT(10) NOT NULL AUTO_INCREMENT,
+  `code` VARCHAR(20) NOT NULL,
+  `target` VARCHAR(2000) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
